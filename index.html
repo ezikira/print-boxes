@@ -13,12 +13,27 @@
 
     <form id="orderForm">
         <label>Тип коробки</label>
-        <select name="type" required>
-            <option value="Самосборная">Самосборная</option>
-            <option value="Крышка-дно">Крышка-дно</option>
-            <option value="С вырубкой">С вырубкой</option>
-            <option value="С окошком">С окошком</option>
-        </select>
+
+<div class="box-types">
+    <label class="box-option">
+        <input type="radio" name="type" value="Самосборная" checked>
+        <img src="img/selflock.png">
+        <span>Самосборная</span>
+    </label>
+
+    <label class="box-option">
+        <input type="radio" name="type" value="Крышка-дно">
+        <img src="img/lid-bottom.png">
+        <span>Крышка-дно</span>
+    </label>
+
+    <label class="box-option">
+        <input type="radio" name="type" value="С вырубкой">
+        <img src="img/diecut.png">
+        <span>С вырубкой</span>
+    </label>
+</div>
+
 
         <div class="sizes">
             <input name="length" placeholder="Длина, мм" required>
