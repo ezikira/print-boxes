@@ -66,3 +66,38 @@ button:hover {
     font-weight: bold;
 }
 
+.box-types {
+    display: flex;
+    gap: 10px;
+}
+
+.box-option {
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    flex: 1;
+}
+
+.box-option img {
+    max-width: 100%;
+    height: 80px;
+    object-fit: contain;
+}
+
+.box-option input {
+    display: none;
+}
+
+.box-option span {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.box-option input:checked + img {
+    outline: 2px solid #0077cc;
+}
+
+
