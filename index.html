@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Печать коробок на заказ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Печать коробок на заказ</h1>
+    <p class="subtitle">Изготовление коробок под ваши размеры</p>
+
+    <form id="orderForm">
+        <label>Тип коробки</label>
+        <select name="type" required>
+            <option value="Самосборная">Самосборная</option>
+            <option value="Крышка-дно">Крышка-дно</option>
+            <option value="С вырубкой">С вырубкой</option>
+            <option value="С окошком">С окошком</option>
+        </select>
+
+        <div class="sizes">
+            <input name="length" placeholder="Длина, мм" required>
+            <input name="width" placeholder="Ширина, мм" required>
+            <input name="height" placeholder="Высота, мм" required>
+        </div>
+
+        <label>Материал</label>
+        <input name="material" placeholder="Картон, микрогофра и т.д.">
+
+        <label>Тираж</label>
+        <input name="quantity" placeholder="Количество" required>
+
+        <label>Контактные данные</label>
+        <input name="name" placeholder="Ваше имя" required>
+        <input name="phone" placeholder="Телефон" required>
+        <input name="email" placeholder="Email">
+
+        <label>Комментарий</label>
+        <textarea name="comment" placeholder="Дополнительные требования"></textarea>
+
+        <button type="submit">Отправить заявку</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script src="send.js"></script>
+</body>
+</html>
 
