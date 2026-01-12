@@ -1,3 +1,17 @@
+const boxTypeInputs = document.querySelectorAll('input[name="type"]');
+const windowOptions = document.getElementById("windowOptions");
+
+boxTypeInputs.forEach(i => {
+    i.addEventListener("change", () => {
+        if (i.value === "С окошком") {
+            windowOptions.style.display = "block";
+        } else {
+            windowOptions.style.display = "none";
+        }
+    });
+});
+
+
 document.getElementById("orderForm").addEventListener("submit", async function (e) {
     e.preventDefault();
 
